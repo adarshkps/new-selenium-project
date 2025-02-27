@@ -9,12 +9,12 @@ public class bylink {
 
 	public static void main(String[] args) {
 
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		//the link text will be work only for the anchor tags
-		WebElement create=driver.findElement(By.linkText("Create new account"));
+		// the link text will be work only for the anchor tags
+		WebElement create = driver.findElement(By.linkText("Create new account"));
 		create.click();
-		
+
 	}
 
 }
