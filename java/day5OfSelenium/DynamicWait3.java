@@ -14,14 +14,12 @@ public class DynamicWait3 {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
-		
-		FluentWait<WebDriver> wait = new FluentWait<>(driver)
-				.withTimeout(Duration.ofSeconds(10))
+
+		FluentWait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10))
 				.pollingEvery(Duration.ofSeconds(2));
-		
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("abc@.com");
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("adcasd");
 
 	}
