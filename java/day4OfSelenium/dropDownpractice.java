@@ -12,13 +12,13 @@ public class dropDownpractice {
 
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://practice.expandtesting.com/dropdown");
-//		WebElement ele= driver.findElement(By.xpath("//select[@id='elementsPerPageSelect']"));
-//		Select sel=new Select(ele);
-//		sel.selectByIndex(2);
-//		Thread.sleep(2000);
-//		sel.selectByValue("100");
-//		Thread.sleep(2000);
-//		sel.selectByVisibleText("10");
+		WebElement ele= driver.findElement(By.xpath("//select[@id='elementsPerPageSelect']"));
+		Select sel=new Select(ele);
+		sel.selectByIndex(2);
+		Thread.sleep(2000);
+		sel.selectByValue("100");
+		Thread.sleep(2000);
+		sel.selectByVisibleText("10");
 		
 		
 		
