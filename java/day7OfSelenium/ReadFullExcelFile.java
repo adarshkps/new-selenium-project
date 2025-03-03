@@ -43,8 +43,7 @@ public class ReadFullExcelFile {
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			Row row = sheet.getRow(i);
 
-			for (int j = 0; j < row.getLastCellNum(); j++) 
-			{
+			for (int j = 0; j < row.getLastCellNum(); j++) {
 				Cell cell = row.getCell(j);
 				String u = cell.toString();
 				j++;
@@ -53,10 +52,9 @@ public class ReadFullExcelFile {
 				test1(u, p);
 
 			}
-			System.out.println();					
+			System.out.println();
 		}
 	}
 }
-					// successful of data driven with the concept of read the excel file and data driven
-
-					
+// successful of data driven with the concept of read the excel file and data
+// driven
