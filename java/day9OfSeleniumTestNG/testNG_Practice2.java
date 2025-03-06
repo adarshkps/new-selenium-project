@@ -12,7 +12,7 @@ public class testNG_Practice2 {
 		System.out.println("BeforeMethod");
 	}
 	@Test	(priority = 6)		
-	public void CreateNewAccount()
+	public void CreateNewAccount() 
 	{
 		System.out.println("Create a New Account");
 	}
