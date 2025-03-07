@@ -39,6 +39,7 @@ public class ReadFullExcelFile {
 
 		// step 4-> getting the sheet
 		Sheet sheet = wb.getSheetAt(0);
+		
 
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			Row row = sheet.getRow(i);
@@ -50,7 +51,8 @@ public class ReadFullExcelFile {
 				Cell cell2 = row.getCell(j);
 				String p = cell.toString();
 				test1(u, p);
-
+				
+				
 			}
 			System.out.println();
 		}
