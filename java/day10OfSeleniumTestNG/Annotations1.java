@@ -13,67 +13,60 @@ import org.testng.annotations.Test;
 public class Annotations1 {
 
 	@BeforeSuite
-	public void bfSuite()
-	{
+	public void bfSuite() {
 		System.out.println("^^^^^^^^^^^^^^^^^^^^^before suite^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 	}
+
 	@BeforeClass
-	public void bfClass()
-	{
+	public void bfClass() {
 		System.out.println("################### before class #############################");
 	}
-	@BeforeTest				// BeforeTest and AfterTest it will be executed only once # before once and after once
-	public void bfTest()
-	{
+
+	@BeforeTest // BeforeTest and AfterTest it will be executed only once # before once and
+				// after once
+	public void bfTest() {
 		System.out.println("before Test---------------->open chrome browser");
-		//WebDriver driver=new ChromeDriver();
+		// WebDriver driver=new ChromeDriver();
 	}
+
 	@BeforeMethod
-	public void bfMethod()
-	{
+	public void bfMethod() {
 		System.out.println("--------------------this is before method-------------------------");
 	}
+
 	@Test
-	public void test1()
-	{
+	public void test1() {
 		System.out.println("this is test 1");
 	}
+
 	@Test
-	public void test2()
-	{
+	public void test2() {
 		System.out.println("this is test 2");
 	}
+
 	@Test
-	public void test3()
-	{
+	public void test3() {
 		System.out.println("this is test 3");
 	}
+
 	@AfterMethod
-	public void afMethod()
-	{
+	public void afMethod() {
 		System.out.println("----------------------this is after method--------------");
 	}
+
 	@AfterTest
-	public void afTest()
-	{
+	public void afTest() {
 		System.out.println("after test---------------->");
 	}
-	@AfterClass()
-	public void afClass()
-	{
+
+	@AfterClass
+	public void afClass() {
 		System.out.println("################### after class #############################");
 	}
+
 	@AfterSuite
-	public void afSuite()
-	{
-		System.out.println("^^^^^^^^^^^^^^^^^^^^before suite^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+	public void afSuite() {
+		System.out.println("^^^^^^^^^^^^^^^^^^^^after suite^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
