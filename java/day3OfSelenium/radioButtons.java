@@ -9,7 +9,7 @@ public class radioButtons {
 
 	public static void main(String[] args) {
 
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new ChromeDriver(); 
 		driver.get("https://practice.expandtesting.com/radio-buttons");
 		WebElement r1=driver.findElement(By.xpath("//input[@id='red']"));
 		r1.click();
