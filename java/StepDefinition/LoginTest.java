@@ -36,15 +36,15 @@ public class LoginTest {
 
 	@Then("user click on the login button")
 	public void user_click_on_the_login_button() {
-		driver.findElement(By.xpath("//button[text()='Login']")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 	}
+	
 
 	@Then("user will navigate to logout page")
 	public void user_will_navigate_to_logout_page() {
-	WebElement Logout = driver.findElement(By.xpath("//a[@class='button secondary radius btn btn-danger']/i"));
-	String str = Logout.getText();
-	System.out.println(str);
-	Assert.assertEquals(str, "Logout");
+		WebElement Logout = driver.findElement(By.xpath("//a[@class='button secondary radius btn btn-danger']/i"));
+		String str = Logout.getText();
+		Assert.assertEquals(str, "Logout");
 	}
 
 	@Then("user will close the browser")
